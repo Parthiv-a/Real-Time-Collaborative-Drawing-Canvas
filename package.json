@@ -1,0 +1,16 @@
+{
+  "name": "collaborative-canvas",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "description": "##Overview A multi-user drawing app where multiple people can draw together in real time using WebSockets and HTML5 Canvas.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
