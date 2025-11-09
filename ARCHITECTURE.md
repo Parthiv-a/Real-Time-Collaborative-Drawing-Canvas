@@ -6,8 +6,7 @@ This document explains how the Collaborative Drawing Canvas works internally, in
 
 ## Data Flow Diagram
 
- User A/B  ──> Draw ──>  Socket.io Client  ── Event ──>   Node.js WebSocket Server
-                
+ User A/B  ──> Draw ──>  Socket.io Client  ── Event ──>   Node.js WebSocket Server    
      ↑                      ↓                                   ↓
      │                 Canvas Update   ←──────       Broadcast Event ←─|
      └─────────────────────────────────────────────────────────────────┘
@@ -39,9 +38,3 @@ This document explains how the Collaborative Drawing Canvas works internally, in
 
 ### Concept
 Undo/Redo actions are handled globally by the server, ensuring that all clients maintain a consistent view of the shared canvas.
-
-### Data Structures
-
-```js
-history = [ {x, y, color, size}, ... ];   // Active drawing history
-redoStack = [ {x, y, color, size}, ... ]; // Stores undone strokes
