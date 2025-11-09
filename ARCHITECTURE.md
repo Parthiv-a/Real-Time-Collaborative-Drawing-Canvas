@@ -6,7 +6,8 @@ This document explains how the Collaborative Drawing Canvas works internally, in
 
 ## Data Flow Diagram
 
- User A/B  ──> Draw ──>  Socket.io Client  ── Event ──>   Node.js WebSocket Server    
+ User A/B  ──> Draw ──>  Socket.io Client  ── Event ──>   Node.js WebSocket Server
+    
      ↑                      ↓                                   ↓
      │                 Canvas Update   ←──────       Broadcast Event ←─|
      └─────────────────────────────────────────────────────────────────┘
