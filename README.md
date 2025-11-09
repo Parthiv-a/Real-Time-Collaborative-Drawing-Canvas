@@ -31,8 +31,10 @@ Multiple users can draw simultaneously on a shared canvas with live synchronizat
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Parthiv-a/Real-Time-Collaborative-Drawing-Canvas.git
+   git clone https://github.com/<your-username>/Real-Time-Collaborative-Drawing-Canvas.git
    cd collaborative-canvas
+2. Install the required dependencies:
    npm install
+3. Start Command
    npm start
-   
+
